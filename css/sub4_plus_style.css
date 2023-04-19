@@ -1,0 +1,381 @@
+@charset "utf-8";
+/* 폰트
+
+    NOTO SANS KR
+    font-family: 'Noto Sans KR', sans-serif;
+
+    EB garamond
+    font-family: 'EB Garamond', serif;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    min-width: 1550px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #091a17;
+    background-color: #e7ead7;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* header */
+#header {
+    background-color: #faf5e8;
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#gnb {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+/* SUB */
+
+.gnb_bg {
+    background-color: #0b3a34;
+    border-radius: 0 0 100px 100px;
+    opacity: 0.8;
+    position: absolute;
+    width: 1320px;
+    height: 300px;
+    z-index: 10;
+}
+
+#gnb li {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 0;
+    position: relative;
+    text-align: center;
+    z-index: 11;
+    color: #0b3a34;
+}
+
+.sub {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translate(-50%);
+    width: 200%;
+    display: none;
+}
+
+.sub>li>a {
+    font-size: 16px;
+    color: #ddedcd;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.sub>li>a:hover {
+    color: #091a17;
+    transition: all 0.5s;
+}
+
+/* sub 보이게 안보이게 호버 설정 */
+
+.gnb_bg {
+    display: none;
+}
+
+
+.header_inner:hover>.gnb_bg,
+.header_inner:hover .sub {
+    display: block;
+}
+
+/* menu */
+#menu {
+    width: 100%;
+}
+
+
+.tabs {
+    width: 1320px;
+    margin: 0 auto;
+    height: 200px;
+    background-color: #e7ead7;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.tabs li.active a {
+    background: url(../images/menu_images/line.png) no-repeat center bottom;
+    padding-bottom: 60px;
+}
+
+.tab_container {
+    background-color: #cfdfca;
+}
+
+#event_md {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.event_title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 100px 0;
+    box-sizing: border-box;
+}
+
+.bubble_btn {
+    margin: 100px 0;
+}
+
+/* 목록_btn (bubble) */
+.btn-bubble {
+    display: inline-block;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 170px;
+    height: 45px;
+    line-height: 41px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 23px !important;
+    background: transparent;
+    font-size: 16px;
+    -webkit-transition: color 0.45s;
+    transition: color 0.45s;
+    color: #0b3a34;
+    border: 2px solid #0b3a34;
+    font-weight: 500;
+}
+
+
+.btn-bubble .btn-bubble-inner {
+    z-index: -1;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.btn-bubble .btn-bubble-itembox {
+    position: relative;
+    display: block;
+    height: 100%;
+    -webkit-filter: url(#bubble-start);
+    filter: url(#bubble-start);
+}
+
+
+
+
+@supports ((-webkit-filter: url("#bubble-start")) or (filter: url("#bubble-start"))) .btn-bubble .btn-bubble-item {
+    -webkit-transform: translate3d(0, 150%, 0) scale(1.4);
+    transform: translate3d(0, 150%, 0) scale(1.4);
+}
+
+.btn-bubble .btn-bubble-item {
+    position: absolute;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    background: #0b3a34;
+    border-radius: 100%;
+    -webkit-transform: translate3d(0, 150%, 0) scale(1.7);
+    transform: translate3d(0, 150%, 0) scale(1.7);
+    -webkit-transition: -webkit-transform 0.45s;
+    transition: -webkit-transform 0.45s;
+    transition: transform 0.45s;
+    transition: transform 0.45s, -webkit-transform 0.45s;
+}
+
+.btn-bubble .btn-bubble-item:nth-of-type(1) {
+    left: 0%;
+    -webkit-transition-delay: 0s;
+    transition-delay: 0s;
+}
+
+.btn-bubble .btn-bubble-item:nth-of-type(2) {
+    left: 30%;
+    -webkit-transition-delay: 0.08s;
+    transition-delay: 0.08s;
+}
+
+.btn-bubble .btn-bubble-item:nth-of-type(3) {
+    left: 60%;
+    -webkit-transition-delay: 0.16s;
+    transition-delay: 0.16s;
+}
+
+.btn-bubble .btn-bubble-item:nth-of-type(4) {
+    left: 90%;
+    -webkit-transition-delay: 0.24s;
+    transition-delay: 0.24s;
+}
+
+.btn-bubble:hover {
+    color: #e7ead7;
+}
+
+.btn-bubble:hover .btn-bubble-item {
+    transform: translateZ(0) scale(1.7);
+}
+
+
+table {
+    width: 1095px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-top: 2px solid #0b3a34;
+    margin-bottom: 100px;
+}
+
+th,
+td {
+    border-bottom: 2px solid #0b3a34;
+    padding: 10px 0;
+}
+
+th {
+    background-color: #faf5e8;
+}
+
+td {
+    padding-left: 50px;
+
+}
+
+
+
+
+
+/* footer */
+#footer {
+    background-color: #0b3a34;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copy {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    padding: 50px 0;
+    color: #ebebeb;
+}
+
+.green {
+    color: #e7ead7;
+    font-family: 'EB Garamond', serif;
+    font-weight: 900;
+}
+
+.right {
+    padding-top: 30px;
+}
+
+.icon ul {
+    display: flex;
+}
+
+.icon ul li {
+    margin-left: 30px;
+    opacity: 0.5;
+}
+
+.icon ul li:first-child {
+    opacity: 1;
+}
+
+
+.icon ul li:hover {
+    opacity: 1;
+}
+
+/* top_btn */
+.bg {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+#footer .p_f p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1c43b;
+    font-weight: bold;
+    font-family: 'EB Garamond', serif;
+
+}
+
+.bg:hover img {
+    transform: rotate(45deg);
+}
+
+.bg img {
+    transition: all 0.5s;
+}
+
+.p_f {
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+}
+
+.test {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.test_btn {
+    display: inline;
+}

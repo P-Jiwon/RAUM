@@ -1,0 +1,607 @@
+@charset "utf-8";
+/* 폰트
+
+    NOTO SANS KR
+    font-family: 'Noto Sans KR', sans-serif;
+
+    EB garamond
+    font-family: 'EB Garamond', serif;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+body {
+    min-width: 1550px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #091a17;
+    background-color: #e7ead7;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* header */
+#header {
+    background-color: #faf5e8;
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#gnb {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+
+/* sub */
+
+.gnb_bg {
+    background-color: #0b3a34;
+    border-radius: 0 0 100px 100px;
+    opacity: 0.8;
+    position: absolute;
+    width: 1320px;
+    height: 300px;
+    z-index: 5;
+}
+
+#gnb li {
+    font-family: 'EB Garamond', serif;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 15px 0;
+    position: relative;
+    text-align: center;
+    z-index: 10;
+    color: #0b3a34;
+}
+
+.sub {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translate(-50%);
+    width: 200%;
+    display: none;
+}
+
+.sub>li>a {
+    font-size: 16px;
+    color: #ddedcd;
+    font-family: 'Noto Sans KR', sans-serif;
+    padding: 5px 0;
+    text-align: center;
+}
+
+.sub>li>a:hover {
+    color: #091a17;
+    transition: all 0.5s;
+}
+
+/* sub 보이게 안보이게 호버 설정 */
+
+.gnb_bg {
+    display: none;
+}
+
+
+.header_inner:hover>.gnb_bg,
+.header_inner:hover .sub {
+    display: block;
+}
+
+
+
+/* main */
+
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #faf5e8;
+}
+
+.slide {
+    overflow: hidden;
+    /* 슬라이드 벗어나면 안보이게 해놓음 */
+    position: relative;
+    width: 1247px;
+    height: 796px;
+    /* li가 전부 포지션되어 높이를 잡아줄 자식이 없으므로, 높이를 꼭! 지정한다. */
+}
+
+.slide li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* transition: all 0.5s; */
+    /* 트랜지션 너무 길게 설정하지 말 것 !
+    2초마다 한 번씩 바뀌기 때문에 */
+}
+
+#main .text {
+    width: 677px;
+    height: 796px;
+    background-color: #faf5e8;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+
+#main p {
+    color: #091a17;
+    font-size: 100px;
+    line-height: 150px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 900;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#main .text>.m_green {
+    color: #0b3a34;
+}
+
+/* ABOUT RAUM */
+
+#about {
+    background: url(../images/about_circle1.png) no-repeat center -42.5%,
+        url(../images/about_circle2.png) no-repeat center 142.5% #faf5e8;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 49.8%;
+    z-index: 5;
+}
+
+.about_inner {
+    border-bottom: 5px solid #0b3a34;
+}
+
+.about_b1 {
+    padding-top: 226px;
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+}
+
+.left1 {
+    width: 590px;
+    height: 734px;
+    border-radius: 590px 0 0 0;
+    background-color: #0b3a34;
+}
+
+
+.left1 {
+    position: relative;
+}
+
+.right1 {
+    width: 590px;
+    height: 733px;
+}
+
+/* 글자들을 po1 , po2, po3, po4, po5로 함! */
+.po1 {
+    position: absolute;
+    top: 60%;
+    left: 67%;
+    transform: translate(-50%, -50%);
+    color: #ecfffd;
+    font-family: 'EB Garamond', serif;
+    font-weight: 900;
+    font-size: 60px;
+    width: 100%;
+}
+
+
+.about_b2 {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 226px;
+
+}
+
+.left2 {
+    width: 590px;
+    height: 733px;
+}
+
+.right2 {
+    width: 590px;
+    height: 733px;
+    border-radius: 0 0 590px 0;
+    background-color: #e7ead7;
+}
+
+.po2 {
+    text-align: right;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 100px 20px 30px 0;
+}
+
+.po3 {
+    text-align: right;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    padding-right: 20px;
+}
+
+.po4 {
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 70px;
+    padding-left: 20px;
+}
+
+.po5 {
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 30px 0 0 20px;
+}
+
+
+
+/* flow */
+
+
+#flow p {
+    font-family: 'EB Garamond', serif;
+    font-weight: 900;
+    font-size: 120px;
+}
+
+#flow {
+    width: 100%;
+    height: 340px;
+    align-items: center;
+    background-color: #faf5e8;
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 0.2s;
+    border-bottom: 5px solid #0b3a34;
+    border-top: 5px solid #0b3a34;
+}
+
+
+@keyframes textLoop {
+    0% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+#flow>p {
+    animation: textLoop 20s linear infinite;
+    padding-right: 20px;
+}
+
+#flow .m_green {
+    color: #0b3a34;
+}
+
+
+/* logo */
+#logo {
+    background: url(../images/logo_bg.png) center 38% #e0e7d2 no-repeat;
+    width: 100%;
+    height: 1365px;
+
+}
+
+.slide2 {
+    position: relative;
+    width: 1018px;
+    height: 500px;
+    margin: 0 auto;
+    padding-top: 100px;
+    border-radius: 0 150px 150px 0;
+    /* li가 전부 포지션되어 높이를 잡아줄 자식이 없으므로, 높이를 꼭! 지정한다. */
+
+}
+
+.slide2 li {
+    position: absolute;
+    top: 184px;
+    left: 1px;
+    /* transition: all 0.5s; */
+    /* 트랜지션 너무 길게 설정하지 말 것 !
+    2초마다 한 번씩 바뀌기 때문에 */
+}
+
+
+/* color */
+#color {
+    background: url(../images/color_bg.jpg) no-repeat center;
+    width: 100%;
+    height: 1000px;
+    border-bottom: 5px solid #0b3a34;
+    border-top: 5px solid #0b3a34;
+
+}
+
+.color_c {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.raum_t {
+    position: absolute;
+    top: 115px;
+    left: 35px;
+    z-index: 5;
+}
+
+.color_t {
+    position: absolute;
+    bottom: -62px;
+    right: 47px;
+}
+
+.color_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+}
+
+.color1,
+.color2,
+.color3 {
+    position: relative;
+}
+
+.hover1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hover2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hover3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.hover1,
+.hover2,
+.hover3 {
+    opacity: 0;
+}
+
+.color1:hover .hover1 {
+    opacity: 1;
+}
+
+.color2:hover .hover2 {
+    opacity: 1;
+}
+
+.color3:hover .hover3 {
+    opacity: 1;
+}
+
+
+/* direction */
+#direction {
+    width: 100%;
+    height: 975px;
+    background-color: #cfdfca;
+}
+
+.dir_box {
+    width: 1320px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.dir_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.text_d {
+    display: flex;
+    align-items: center;
+}
+
+.text_d>p {
+    padding-right: 50px;
+    color: #0b3a34;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text_d>.eng {
+    font-size: 40px;
+    font-family: 'EB Garamond', serif;
+    font-weight: 800;
+}
+
+.text_d>p>.eng1 {
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+}
+
+.share_btn {
+    opacity: 0.5;
+}
+
+.share_btn:hover {
+    opacity: 1;
+}
+
+.map {
+    padding-top: 50px;
+    padding-left: 60px;
+}
+
+.dir_bean {
+    position: absolute;
+    bottom: -36px;
+    right: 5px;
+}
+
+.dir_logo {
+    position: absolute;
+    bottom: -91px;
+    right: -74px;
+}
+
+.rotate .dir_logo {
+    animation: rotation 5s linear infinite;
+}
+
+/*hover시에 애니메이션의 움직임을 일시정지 하기*/
+.rotate:hover .dir_logo {
+    animation-play-state: paused;
+}
+
+/* 원두모양 회전 애니메이션 */
+@keyframes rotation {
+    form {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* footer */
+#footer {
+    background-color: #0b3a34;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copy {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    padding: 50px 0;
+    color: #ebebeb;
+}
+
+.green {
+    color: #e7ead7;
+    font-family: 'EB Garamond', serif;
+    font-weight: 900;
+}
+
+.right {
+    padding-top: 30px;
+}
+
+.icon ul {
+    display: flex;
+}
+
+.icon ul li {
+    margin-left: 30px;
+    opacity: 0.5;
+}
+
+.icon ul li:first-child {
+    opacity: 1;
+}
+
+
+.icon ul li:hover {
+    opacity: 1;
+}
+
+/* top_btn */
+.bg {
+    position: relative;
+    width: 50px;
+    height: 50px;
+}
+
+#footer .p_f p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f1c43b;
+    font-weight: bold;
+    font-family: 'EB Garamond', serif;
+
+}
+
+.bg:hover img {
+    transform: rotate(45deg);
+}
+
+.bg img {
+    transition: all 0.5s;
+}
+
+.p_f {
+    position: fixed;
+    right: 50px;
+    bottom: 80px;
+}
