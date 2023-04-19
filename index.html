@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1550">
+    <title>RAUM</title>
+
+    <!-- 폰트연결 -->
+    <!-- NOTO SANS KR -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- EB Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- css연결 -->
+    <link rel="stylesheet" href="./css/indexstyle.css">
+
+
+
+    <!-- 파비콘연결 -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <div id="header">
+        <!-- bg -->
+        <div class="header_inner">
+            <ul id="gnb">
+                <li><a href="./sub1.html">RAUM</a>
+                    <ul class="sub">
+                        <li><a href="./sub1.html#about">브랜드 소개</a></li>
+                        <li><a href="./sub1.html#direction">오시는 길</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="./sub2.html">MENU</a>
+                    <ul class="sub">
+                        <li><a href="./sub2.html">NEW</a></li>
+                        <li><a href="./sub2.html">COFFEE</a></li>
+                        <li><a href="./sub2.html">NONCOFFEE</a></li>
+                        <li><a href="./sub2.html">DESSERT</a></li>
+                        <li><a href="./sub2.html">MD</a></li>
+                    </ul>
+                </li>
+                <li><a href="./index.html"><img src="images/header_logo.png" alt="헤더로고이미지"></a>
+                </li>
+                <li><a href="./sub3.html">SPACE</a>
+                    <ul class="sub">
+                        <li><a href="./sub3.html">공간 소개</a></li>
+                        <li><a href="./sub3.html">이용 방법</a></li>
+                    </ul>
+                </li>
+                <li><a href="./sub4.html">NOTICE</a>
+                    <ul class="sub">
+                        <li><a href="./sub4.html">EVENT</a></li>
+                        <li><a href="./sub4.html">FAQ</a></li>
+                    </ul>
+                </li>
+            </ul><!--gnb-->
+            <div class="gnb_bg"></div>
+        </div><!--header_inner-->
+    </div><!--header-->
+
+
+    <div id="main_banner">
+        <video src="./images/main_banner.mp4" autoplay loop muted></video>
+    </div><!--main_banner-->
+
+    <div id="brand">
+        <!-- 이미지 att./ bg -->
+        <div class="text">
+            <h1 class="title">RAUM</h1>
+            <p>RAUM(라움)은 다양한 공간을 가지고 있는 카페입니다. <br>
+                맛있는 커피와 함께 나만의 공간을 만들어보세요.</p>
+            <a href="./sub1.html" type="button" class="eng btn-bubble">
+                자세히보기
+                <span class="btn-bubble-inner">
+                    <span class="btn-bubble-itembox">
+                        <span class="btn-bubble-item"></span>
+                        <span class="btn-bubble-item"></span>
+                        <span class="btn-bubble-item"></span>
+                        <span class="btn-bubble-item"></span>
+                    </span>
+                </span>
+            </a>
+        </div><!--text-->
+    </div><!--brand-->
+
+
+
+
+
+
+
+    <div id="menu">
+        <!--가운데정렬-->
+        <h1 class="title2">RAUM INTERIOR</h1>
+        <div class="menu_rel">
+            <!--화살표의 포지션 기준-->
+            <!-- Swiper -->
+            <div class="swiper menu">
+                <div class="swiper-wrapper">
+                    <!-- drink1 -->
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/americano.png" alt="아메리카노 이미지" class="drink1">
+                        </div><!--circle_b-->
+                        <p>아메리카노</p>
+                    </div><!--swiper-slide-->
+
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/cafelatte.png" alt="카페라떼 이미지" class="drink1">
+                        </div><!--circle_b-->
+                        <p>카페라떼</p>
+                    </div><!--swiper-slide-->
+
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/caramel.png" alt="카라멜마끼아또 이미지" class="drink1">
+                        </div><!--circle_b-->
+                        <p>카라멜마끼아또</p>
+                    </div><!--swiper-slide-->
+
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/dolce.png" alt="돌체라떼 이미지" class="drink1">
+                        </div><!--circle_b-->
+                        <p>돌체라떼</p>
+                    </div><!--swiper-slide-->
+
+
+
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/matcha.png" alt="말차라떼 이미지" class="drink1">
+                        </div><!--circle_b-->
+                        <p>말차라떼</p>
+                    </div><!--swiper-slide-->
+
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/milktea.png" alt="밀크티라떼 이미지" class="drink1">
+                        </div><!--circle_b-->
+                        <p>밀크티라떼</p>
+                    </div><!--swiper-slide-->
+
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/chocolatte.png" alt="초코라떼 이미지" class="drink1">
+                        </div><!--circle_b-->
+                        <p>초코라떼</p>
+                    </div><!--swiper-slide-->
+
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/sweet_p.png" alt="고구마라떼이미지" class="drink1">
+                        </div><!--circle_b-->
+                        <p>고구마라떼</p>
+                    </div><!--swiper-slide-->
+
+                    <!--drink3-->
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/choco_m.png" alt="초코마카롱 이미지" class="drink3">
+                        </div><!--circle_b-->
+                        <p>초코마카롱</p>
+                    </div><!--swiper-slide-->
+
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/vanilla_m.png" alt="바닐라마카롱 이미지" class="drink3">
+                        </div><!--circle_b-->
+                        <p>바닐라마카롱</p>
+                    </div><!--swiper-slide-->
+
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/chococookie.png" alt="초코쿠키 이미지" class="drink3">
+                        </div><!--circle_b-->
+                        <p>초코쿠키</p>
+                    </div><!--swiper-slide-->
+
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/tiramisu.png" alt="티라미수이미지" class="drink3">
+                        </div><!--circle_b-->
+                        <p>티라미수</p>
+                    </div><!--swiper-slide-->
+
+                    <!--drink4-->
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/capsule.png" alt="커피캡슐 이미지" class="drink4">
+                        </div><!--circle_b-->
+                        <p>커피 캡슐</p>
+                    </div><!--swiper-slide-->
+
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/deep_forest.png" alt="원두 이미지" class="drink4">
+                        </div><!--circle_b-->
+                        <p>딥 포레스트 원두</p>
+                    </div><!--swiper-slide-->
+
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/raum_d.png" alt="라움 다이어리이미지" class="drink4">
+                        </div><!--circle_b-->
+                        <p>라움 다이어리</p>
+                    </div><!--swiper-slide-->
+
+                    <div class="swiper-slide">
+                        <div class="circle_b">
+                            <img src="./images/bestmenu_circle.png" alt="배경써클이미지">
+                            <img src="./images/cup.png" alt="라움 머그잔 이미지" class="drink4">
+                        </div><!--circle_b-->
+                        <p>라움 머그잔</p>
+                    </div><!--swiper-slide-->
+
+
+
+
+
+                </div><!--swiper-wrapper-->
+
+            </div><!--swiper-->
+            <div class="swiper-button-next menu_next"></div>
+            <div class="swiper-button-prev menu_prev"></div>
+        </div><!--menu_rel-->
+        <a href="./sub2.html" type="button" class="eng btn-bubble">
+            MORE
+            <span class="btn-bubble-inner">
+                <span class="btn-bubble-itembox">
+                    <span class="btn-bubble-item"></span>
+                    <span class="btn-bubble-item"></span>
+                    <span class="btn-bubble-item"></span>
+                    <span class="btn-bubble-item"></span>
+                </span>
+            </span>
+        </a>
+    </div><!--menu-->
+
+
+
+    <div id="space">
+        <!-- 가운데 정렬, 마진 100 , width1320 -->
+        <div class="title_b">
+            <h1 class="title2">RAUM INTERIOR</h1>
+        </div>
+        <div class="space1">
+            <div class="img_b">
+                <img src="images/main_space1.png" alt="오픈형라운지이미지">
+            </div><!--img_b-->
+            <div class="text_b">
+                <img src="images/lounge.png" alt="라운지글자이미지">
+                <h3 class="sub_title">오픈형 라운지</h3>
+                <p class="text">오픈형 공간으로 개방적인 분위기. <br>
+                    커피와 함께 넓은 공간에서 시간을 보내세요.
+                </p>
+                <a href="./sub3.html" type="button" class="eng btn-bubble">
+                    MORE
+                    <span class="btn-bubble-inner">
+                        <span class="btn-bubble-itembox">
+                            <span class="btn-bubble-item"></span>
+                            <span class="btn-bubble-item"></span>
+                            <span class="btn-bubble-item"></span>
+                            <span class="btn-bubble-item"></span>
+                        </span>
+                    </span>
+                </a>
+            </div><!--text_b-->
+        </div><!--space1-->
+
+
+        <div class="space2">
+            <div class="text_b">
+                <img src="images/study.png" alt="스터디글자이미지">
+                <h3 class="sub_title">스터디 라운지</h3>
+                <p class="text">멀티탭이 내장된 넓은 테이블에서 공부를 하거나 <br>
+                    혼자만의 시간을 보낼 수 있습니다.
+                </p>
+                <a href="./sub3.html" type="button" class="eng btn-bubble">
+                    MORE
+                    <span class="btn-bubble-inner">
+                        <span class="btn-bubble-itembox">
+                            <span class="btn-bubble-item"></span>
+                            <span class="btn-bubble-item"></span>
+                            <span class="btn-bubble-item"></span>
+                            <span class="btn-bubble-item"></span>
+                        </span>
+                    </span>
+                </a>
+            </div><!--text_b-->
+            <div class="img_b">
+                <img src="images/main_space2.png" alt="스터디라운지이미지">
+            </div><!--img_b-->
+        </div><!--space2-->
+
+
+        <div class="space3">
+            <div class="img_b">
+                <img src="images/main_space3.png" alt="미팅룸라운지이미지">
+            </div><!--img_b-->
+            <div class="text_b">
+
+                <h3 class="sub_title">미팅룸</h3>
+                <p class="text">다 같이 모여서 스터디하거나 회사 미팅 시 <br>
+                    이용가능한 미팅룸입니다.
+                </p>
+                <a href="./sub3.html" type="button" class="eng btn-bubble">
+                    MORE
+                    <span class="btn-bubble-inner">
+                        <span class="btn-bubble-itembox">
+                            <span class="btn-bubble-item"></span>
+                            <span class="btn-bubble-item"></span>
+                            <span class="btn-bubble-item"></span>
+                            <span class="btn-bubble-item"></span>
+                        </span>
+                    </span>
+                </a>
+
+            </div><!--text_b-->
+        </div><!--space3-->
+    </div><!--space-->
+
+
+    <div id="event">
+        <!-- bg -->
+        <h1 class="title2">RAUM EVENT</h1>
+        <div class="event_inner">
+            <!-- width1320,margin -->
+
+
+            <div class="event_b">
+                <div class="img_e">
+                    <a href="#"><img src="images/MD.jpg" alt="MD배너"></a>
+                </div><!--img_e-->
+                <div class="text_e">
+                    <p><a href="./sub4.html">
+                            [런칭이벤트] <br>
+                            RAUM MD 런칭 이벤트 <br>
+                            10% 할인</a>
+                    </p>
+                </div><!--text_e-->
+            </div><!--event_b-->
+
+            <div class="event_b">
+                <div class="img_e">
+                    <a href="./sub4.html"><img src="images/mango_banner.jpg" alt="망고시리즈배너"></a>
+                </div><!--img_e-->
+                <div class="text_e">
+                    <p><a href="#">
+                            [2023년 6월] <br>
+                            카페 라움 <br>
+                            망고 시리즈 출시</a>
+                    </p>
+                </div><!--text_e-->
+            </div><!--event_b-->
+
+            <div class="event_b">
+                <div class="img_e">
+                    <img src="images/tumbler.jpg" alt="텀블러할인배너">
+                </div><!--img_e-->
+                <div class="text_e">
+                    <p><a href="./sub4.html">
+                            [상시이벤트] <br>
+                            텀블러 이용시 <br>
+                            500원 할인</a>
+                    </p>
+                </div><!--text_e-->
+            </div><!--event_b-->
+
+            <div class="event_b">
+                <div class="img_e">
+                    <img src="images/early-bird.jpg" alt="얼리버드이벤트배너">
+                </div><!--img_e-->
+                <div class="text_e">
+                    <p><a href="./sub4.html">
+                            [얼리버드 이벤트] <br>
+                            기간 내 스터디존 이용시<br>
+                            아메리카노 쿠폰 증정</a>
+                    </p>
+                </div><!--text_e-->
+            </div><!--event_b-->
+
+        </div><!--event_inner-->
+
+        <a href="./sub4.html" type="button" class="eng btn-bubble">
+            MORE
+            <span class="btn-bubble-inner">
+                <span class="btn-bubble-itembox">
+                    <span class="btn-bubble-item"></span>
+                    <span class="btn-bubble-item"></span>
+                    <span class="btn-bubble-item"></span>
+                    <span class="btn-bubble-item"></span>
+                </span>
+            </span>
+        </a>
+    </div><!--event-->
+
+
+
+    <div id="footer">
+        <div class="footer_inner">
+
+            <div class="copy">
+                <p>
+                    COMPANY / CEO : <span class="green">RAUM SPACE & CAFE</span> / JIWON PARK <br>
+                    ADDRESS : 부산광역시 중구 중앙대로 26 10층
+                </p>
+                <p class="right">Copyrights 2023 ⓒ raumcafe.co.ltd., All Rights Reserved.</p>
+            </div><!--copyright-->
+
+            <div class="icon">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/footer_logo.png" alt="푸터로고이미지">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/youtube.png" alt="유튜브아이콘">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/blog.png" alt="블로그아이콘">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/facebook.png" alt="페이스북아이콘">
+                        </a>
+                    </li>
+                </ul>
+            </div><!--icon-->
+
+
+        </div><!--footer_inner-->
+
+        <div class="p_f">
+            <div class="bg">
+                <a href="#">
+                    <p>TOP</p>
+                    <img src="./images/top_btn.png" alt="" class="bg1">
+                </a>
+            </div>
+        </div>
+    </div><!--footer-->
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".menu", {
+            slidesPerView: 4,
+            /*한번에 보이는 swiper-slide의 갯수*/
+            spaceBetween: 0,
+            /*swiper-slide들 사이에 얼마만큼의 여백을 줄 것인지 설정.*/
+            navigation: {
+                nextEl: ".menu_next",
+                prevEl: ".menu_prev",
+            },
+
+        });
+    </script>
+</body>
+
+</html>
